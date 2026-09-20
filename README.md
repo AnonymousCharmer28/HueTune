@@ -2,17 +2,14 @@
 
 > Snap a photo with vintage-cam filters, and get a song whose cover art matches the colours of your pic. Stick the song, cover and a lyric line on the photo, then post it.
 
-![HueTune banner](docs/screenshots/banner.png)
+![HueTune banner]<img width="229" height="280" alt="image" src="https://github.com/user-attachments/assets/76aa8fbe-2982-4ca6-9ee6-a900abf32719" />
+
 
 ## 📸 Screenshots
 
 | Vintage filters | Colour → song match |
 | :---: | :---: |
-| ![Filters](docs/screenshots/filters.png) | ![Top 3 matches](docs/screenshots/matches.png) |
-| **Song card overlay** | **On mobile** |
-| ![Overlay](docs/screenshots/overlay.png) | ![Mobile](docs/screenshots/mobile.png) |
-
-<!-- Tip: replace these with your own exports. A short screen-recording GIF (docs/screenshots/demo.gif) looks great here. -->
+| ![Filters]<img width="150" height="62" alt="image" src="https://github.com/user-attachments/assets/5dbf03da-bef5-4ce1-a738-0349053de53b" /> | ![Top 3 matches]<img width="188" height="129" alt="image" src="https://github.com/user-attachments/assets/5df2ef4c-b0b3-48b5-9a44-13b4dfab912d" /> |
 
 ## ✨ Features
 
