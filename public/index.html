@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HueTune</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>Hue<span>Tune</span></h1><p>Snap a photo. Get a song that matches its colours. Post it.</p></header>
+<main>
+  <section>
+    <figure class="print">
+      <video id="cam" autoplay playsinline muted></video>
+      <canvas id="out" hidden></canvas>
+      <figcaption id="hint" class="hint"></figcaption>
+    </figure>
+    <div class="row">
+      <button id="snap" class="go">Snap photo</button>
+      <label class="btn">Upload a photo<input id="file" type="file" accept="image/*" hidden></label>
+      <button id="retake" hidden>Retake</button>
+    </div>
+    <h2>Photo strip</h2>
+    <div class="row">
+      <button id="booth" class="go">Start photobooth</button>
+      <button id="addStrip">Add this photo</button>
+      <button id="clearStrip">Clear</button>
+    </div>
+    <div id="stripColors" class="chips"></div>
+    <canvas id="strip"></canvas>
+    <label>Sticker size <input type="range" id="ssize" min="24" max="120" value="56"></label>
+    <div id="stickers" class="chips"></div>
+    <div class="row"><button id="undoSticker">Undo sticker</button><button id="dlStrip" class="go">Download strip</button></div>
+  </section>
+  <aside>
+    <h2>Filter</h2><div id="filters" class="chips"></div>
+    <h2>Find a song</h2>
+    <div id="moods" class="chips"></div>
+    <input id="artist" type="text" placeholder="Artist (optional)">
+    <div class="row"><button id="find" class="go">Match my colours</button></div>
+    <div id="results"></div>
+    <h2>Put on the photo</h2>
+    <div id="layouts" class="chips"></div>
+    <p class="hint">Drag the song or the lyric on the photo to move it.</p>
+    <label><input type="checkbox" id="tSong" checked> Song and artist</label>
+    <label><input type="checkbox" id="tCover" checked> Cover art</label>
+    <label>Size <input type="range" id="size" min="30" max="250" value="100"></label>
+    <input id="lyric" type="text" maxlength="90" placeholder="One lyric line you love">
+    <h2>Export</h2>
+    <div id="ratios" class="chips"></div>
+    <div id="frames" class="chips"></div>
+    <div class="row"><button id="dl" class="go">Download</button><button id="share" hidden>Share to Instagram</button></div>
+  </aside>
+</main>
+<script src="app.js"></script>
+</body>
+</html>

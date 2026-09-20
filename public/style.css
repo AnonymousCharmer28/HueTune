@@ -1,0 +1,49 @@
+:root{color-scheme:light;--paper:#eceff2;--ink:#1c2530;--film:#f2b632;--sky:#7fa6c9}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.5 "Bricolage Grotesque","Trebuchet MS",sans-serif}
+header{max-width:1080px;margin:0 auto;padding:28px 16px 0}
+h1{margin:0;font-size:2.6rem;font-weight:800;letter-spacing:-.03em}
+h1 span{color:var(--sky)}
+header p{margin:0;opacity:.7}
+main{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(260px,1fr);gap:40px;max-width:1080px;margin:24px auto 48px;padding:0 16px}
+.print{margin:0;background:#fff;padding:14px 14px 12px;box-shadow:0 14px 34px #1c253026}
+video,canvas{width:100%;display:block;background:#111;max-height:72vh;object-fit:contain}
+canvas{cursor:crosshair;touch-action:none}
+figcaption{min-height:2.6em;padding-top:10px}
+aside{border-left:3px solid var(--film);padding-left:24px}
+h2{margin:22px 0 8px;font-size:1.05rem;font-weight:700}
+h2:first-child{margin-top:0}
+.row,.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.chips{margin-top:0}
+button,.btn{font:inherit;padding:7px 15px;border:2px solid var(--ink);border-radius:999px;background:transparent;color:var(--ink);cursor:pointer}
+button:hover,.btn:hover{background:#dfe4ea}
+button:focus-visible,.btn:focus-within,input:focus-visible{outline:3px solid var(--sky);outline-offset:2px}
+button.on,.sel{background:var(--ink)!important;color:#fff}
+.go{background:var(--film);border-color:var(--film);font-weight:700}
+.go:hover{background:#e6a820}
+input[type=text]{width:100%;padding:9px 12px;margin-top:10px;border:2px solid #c3ccd6;border-radius:10px;font:inherit;background:#fff}
+label{display:block;margin:2px 0}
+.hint{font-size:.88rem;opacity:.8;display:block}
+.dot{display:inline-block;width:14px;height:14px;border-radius:50%;vertical-align:-2px;border:1px solid #0003}
+.res{display:flex;gap:10px;align-items:center;width:100%;text-align:left;border-radius:12px;margin-top:8px;border-width:1px}
+.res img,.res i{display:block;width:44px;height:44px;border-radius:6px;flex:none;object-fit:cover}
+.res small{display:block;opacity:.75}
+@media(max-width:800px){main{grid-template-columns:1fr}aside{border-left:0;padding-left:0}}
+a.hint{color:inherit;text-decoration-color:var(--sky)}
+input[type=range]{width:70%;vertical-align:middle;accent-color:var(--ink)}
+
+/* --- polish: one radius, clearer selected states, louder colour hint --- */
+:root{--r:10px}
+button,.btn,input[type=text],.res,.print{border-radius:var(--r)}
+video,canvas,.res img,.res i{border-radius:calc(var(--r) - 4px)}
+button,.btn{padding:8px 16px;font-weight:600}
+h2{font-size:1rem;letter-spacing:.01em;margin:26px 0 10px}
+h2:first-child{margin-top:0}
+.chips+.chips{margin-top:8px}
+button.on,.sel{background:var(--ink)!important;color:#fff;box-shadow:0 0 0 3px var(--film)}
+#hint{font-size:1rem;font-weight:600;opacity:1}
+#hint .dot{width:22px;height:22px;border:0;margin-right:6px;vertical-align:-6px;box-shadow:0 0 0 3px #fff,0 0 0 4px var(--ink)}
+
+/* --- photo strip --- */
+#strip{display:block;width:100%;max-width:240px;max-height:none;margin:12px 0;background:transparent;border-radius:4px;box-shadow:0 10px 24px #1c253026;cursor:default}
